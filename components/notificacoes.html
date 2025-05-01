@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Componentes de Notificação</title>
+    <link rel="stylesheet" href="css/components/notificacoes.css"/>
+</head>
+<body>
+    <div class="container">
+        <h1>Demonstração de Notificações</h1>
+        <button id="btnSuccess">Simular Cadastro com Sucesso</button>
+        <button id="btnError">Simular Erro de Cadastro</button>
+    </div>
+
+    <!-- Templates de notificação (não visíveis inicialmente) -->
+    <div id="notificationSuccess" class="notification notification-success">
+        <div class="notification-icon">✓</div>
+        <div class="notification-content">
+            <h3 class="notification-title">Sucesso</h3>
+            <p class="notification-message">Produto cadastrado com sucesso!</p>
+        </div>
+    </div>
+
+    <div id="notificationError" class="notification notification-error">
+        <div class="notification-icon">✕</div>
+        <div class="notification-content">
+            <h3 class="notification-title">Erro ao cadastrar</h3>
+            <p class="notification-message">O campo <span id="errorField">Nome</span> é obrigatório.</p>
+        </div>
+    </div>
+
+    <script src="js/modules/notificacoes.js"></script>
+</body>
+</html>
