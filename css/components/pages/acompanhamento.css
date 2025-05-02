@@ -1,0 +1,116 @@
+  main {
+    padding: 0 20%;
+    background: #fff;
+  }
+  
+  .pedido-info {
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 10px;
+  }
+  
+  .status {
+    border-bottom: 1px solid #ccc;
+    margin: 20px 0;
+  }
+  
+  .etapas {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    margin-top: 10px;
+  }
+  
+  .etapa {
+    flex: 1;
+    position: relative;
+    padding: 10px 5px;
+    color: #888;
+  }
+  
+  .etapa::before {
+    content: "";
+    width: 10px;
+    height: 10px;
+    background: #ccc;
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto 5px;
+  }
+  
+  .etapa.ativa {
+    color: #000;
+  }
+  
+  .etapa.ativa::before {
+    background: #000;
+  }
+  
+  .conteudo {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+  }
+  
+  .item{
+    border-bottom: 1px solid #ccc;
+    flex: 2;
+    padding: 15px;
+  }
+
+  .resumo {
+    border-bottom: 1px solid #ccc;
+    flex: 1;
+    padding: 15px;
+  }
+  
+  .produto {
+    display: flex;
+    align-items: center;
+  }
+  
+  .imagem {
+    width: 100px;
+    height: 100px;
+    background: repeating-conic-gradient(#ddd 0% 25%, transparent 0% 50%) 50% / 20px 20px;
+    border: 1px solid #aaa;
+    margin-right: 10px;
+  }
+  
+  .descricao .cod, .quantidade{
+    color: gray;
+  }
+  
+  .resumo p {
+    display: flex;
+    justify-content: space-between;
+    margin: 5px 0;
+  }
+
+  .resumo div {
+    border-bottom: 1px solid #ccc;
+  }
+  
+  .entrega {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    gap: 20px;
+  }
+
+  .entrega p {
+    color: gray;
+  } 
+  
+  .entrega div {
+    border-bottom: 1px solid #ccc;
+    padding: 15px;
+  }
+
+  .endereco {
+    flex: 2;
+  }
+
+  .pagamento {
+    flex: 1;
+  }
+  
