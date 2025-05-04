@@ -72,7 +72,7 @@ Antes de começar, você precisa ter instalado em sua máquina:
 2. Execute o comando:
 
    ```bash
-   git clone https://github.com/gustavo-reinaldo/Brinque-Brinde.git
+   git clone https://github.com/Brinque-e-Brinde/BrinqueBrinde.git
    ```
 
 3. Acesse a pasta do projeto:

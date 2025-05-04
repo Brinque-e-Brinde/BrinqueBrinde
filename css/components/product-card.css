@@ -1,0 +1,141 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+  }
+  
+  body {
+    background-color: #f5f5f5;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+  }
+  
+  .product-card {
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 320px;
+    overflow: hidden;
+    padding: 16px;
+  }
+  
+  .product-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 12px;
+  }
+  
+  .product-main-info {
+    flex: 1;
+  }
+  
+  .product-title {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 2px;
+  }
+  
+  .product-category {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 10px;
+  }
+  
+  .product-price {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .product-image {
+    width: 80px;
+    height: 80px;
+    background-color: #f0f0f0;
+    border-radius: 8px;
+    margin-right: 12px;
+    object-fit: cover;
+  }
+  
+  .menu-button {
+    background: none;
+    border: none;
+    font-size: 18px;
+    color: #333;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  
+  .description-title {
+    font-weight: bold;
+    font-size: 14px;
+    margin-bottom: 8px;
+    color: #333;
+  }
+  
+  .description-text {
+    font-size: 13px;
+    color: #666;
+    margin-bottom: 16px;
+    line-height: 1.4;
+  }
+  
+  .product-stats {
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    overflow: hidden;
+    margin-top: 12px;
+  }
+  
+  .stat-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 16px;
+    font-size: 14px;
+  }
+  
+  .stat-row:not(:last-child) {
+    border-bottom: 1px solid #e0e0e0;
+  }
+  
+  .stat-label {
+    color: #333;
+    font-weight: 500;
+  }
+  
+  .stat-value {
+    display: flex;
+    align-items: center;
+    color: #333;
+  }
+  
+  .stat-value .icon {
+    margin-right: 6px;
+  }
+  
+  .stat-value .number {
+    font-weight: 500;
+  }
+  
+  .up-arrow {
+    transform: rotate(-90deg);
+    display: inline-block;
+    margin-right: 4px;
+  }
+  
+  .dash {
+    display: inline-block;
+    width: 16px;
+    height: 2px;
+    background-color: #333;
+    margin-right: 4px;
+    vertical-align: middle;
+  }
+  
