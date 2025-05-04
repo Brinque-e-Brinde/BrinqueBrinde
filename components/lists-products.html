@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Componente Lista de Produtos</title>
+    <!-- Importação do arquivo CSS -->
+    <link rel="stylesheet" href="../css/components/lists-products.css">
+</head>
+<body>
+    <div class="products-card">
+        <div class="products-header">
+            <h2>Produtos</h2>
+            <button type="button" class="more-options">
+                <span>⋮</span>
+            </button>
+        </div>
+        
+        <div class="products-table">
+            <div class="table-header">
+                <div class="header-cell checkbox-cell"></div>
+                <div class="header-cell name-cell">Nome</div>
+                <div class="header-cell id-cell">ID do pedido</div>
+                <div class="header-cell qty-cell">Quantidade</div>
+                <div class="header-cell total-cell">Total</div>
+            </div>
+            
+            <div class="table-body" id="productsContainer">
+                <!-- Produtos serão inseridos aqui via JavaScript -->
+            </div>
+        </div>
+        
+        <div class="summary-section">
+            <div class="summary-row">
+                <span class="summary-label">Subtotal</span>
+                <span class="summary-value" id="subtotalValue">R$ 100,00</span>
+            </div>
+            <div class="summary-row">
+                <span class="summary-label">Desconto</span>
+                <span class="summary-value" id="discountValue">R$ 0,00</span>
+            </div>
+            <div class="summary-row">
+                <span class="summary-label">Taxa de Envio</span>
+                <span class="summary-value" id="shippingValue">R$ 0,00</span>
+            </div>
+            <div class="summary-row grand-total">
+                <span class="summary-label">Total</span>
+                <span class="summary-value" id="totalValue">R$ 400,00</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Importação do arquivo JavaScript -->
+    <script src="../js/modules/lists-products.js"></script>
+</body>
+</html>
