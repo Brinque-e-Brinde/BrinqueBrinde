@@ -37,13 +37,15 @@ brinque-brinde/
 │   ├── header.html       # cabeçalho
 │   └── footer.html       # rodapé
     └── produtc-card.html # marcação exibe e descreve produto
+    └── lists-products.html  # lista os produto 
 ├── assets/               # recursos estáticos
 │   └── images/           # imagens
 ├── css/
 │   ├── components/       # estilos de cada componente
 │   │   ├── header.css    # estilos do cabeçalho
 │   │   └── footer.css    # estilos do rodapé
-        └── produtc-card.css    # estilos exibe e descreve produto 
+        └── produtc-card.css    # estilos exibe e descreve produto
+        └── lists-products.css  # estilos lista os produto 
 │   └── pages/            # sobrescritas específicas de cada página
 │       └── home.css      # estilos exclusivos da home
 ├── js/
@@ -52,6 +54,7 @@ brinque-brinde/
 │       ├── include.js    # carrega componentes HTML
 │       └── pagina.js     # lógica exclusiva de páginas
         └── produtc-card.js  # interatividade para exibir e descrever produto
+        └── lists-products.js  # interatividade para listar os produto 
 ├── data/                 # mocks em JSON
 │   └── mock-data.json
 └── README.md             # documentação deste projeto
