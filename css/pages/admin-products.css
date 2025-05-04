@@ -1,0 +1,145 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body, html {
+    font-family: 'Poppins', sans-serif;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .top-bar {
+    top: 0;
+    height: 77px;
+    width: 100%;
+    background-color: #585858;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    left: 0;
+    z-index: 1;
+    padding: 0 20px;
+  }
+  
+  .bottom-bar {
+    height: 77px;
+    width: 100%;
+    background-color: #BABABA;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    left: 0;
+    z-index: 1;
+    padding: 0 20px;
+    bottom: 0;
+    color: rgba(0, 0, 0, 0.5);
+  }
+  
+  .rectangle {
+    height: 30px;
+    width: 98px;
+    background-color: #999;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 16px;
+    gap: 10px;
+  }
+  
+  .rectangle-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 52px;
+    width: 145px;
+    background-color: #C2C2C2;
+    border-radius: 5px;
+    font-size: 16px;
+    line-height: 1.1;
+  }
+  
+  .content {
+    display: flex;
+    margin-left: 232px;
+    padding-top: 77px;
+    padding-bottom: 77px;
+    height: calc(100% - 75px);
+    overflow: auto;
+    color: #000;
+    background-color: #C2C2C2;
+    position: relative;
+    font-weight: 600;
+    font-size: 24px;
+  }
+  
+  .content p {
+    padding: 20px;
+  }
+  
+  .admin-icon-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .fa-bell {
+    font-size: 22px;
+    margin-right: 10px;
+  }
+  
+  .sidebar {
+    height: calc(100% - 154px);
+    width: 231px;
+    background-color: #FFFFFF;
+    position: fixed;
+    top: 77px;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+  }
+  
+  .sidebar button {
+    width: 199px;
+    height: 36px;
+    margin-bottom: 20px;
+    background-color: #C2C2C2;
+    border: none;
+    font-size: 14px;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  
+  .sidebar button:hover {
+    background-color: #777;
+  }
+  
+  .new-button {
+    position: absolute;
+    right: 20px;
+    bottom: 85%;
+    background-color: #878787;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    height: 30px;
+    width: 98px;
+    justify-content: center;
+    text-align: center;
+    cursor: pointer;
+  }
+  
+  .new-button:hover {
+    background-color: #777;
+  }
+  
