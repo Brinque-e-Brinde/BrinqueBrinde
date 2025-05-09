@@ -10,6 +10,7 @@
   />
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../css/pages/admin-products.css">
+  <script src="../js/modules/AddProduct.js"></script>
 </head>
 <body>
   <div class="top-bar">
@@ -36,8 +37,93 @@
   </div>
 
   <div class="content">
-    <p>Produtos</p>
-    <button class="new-button">Novo</button>
+    <p id="titleProducts">Produtos</p>
+    <button  id="btnNovoProduto" class="new-button">Novo</button>
+
+    <div id="formNovoProduto" class="new-product-form" style="display: none;">
+      <form>
+        <div class="form-grid">
+          <!-- Coluna esquerda -->
+          <div class="form-left">
+            <label>Nome do produto *</label>
+            <input type="text" placeholder="Nome" required>
+    
+            <label>Descrição *</label>
+            <textarea placeholder="Descrição aqui" required></textarea>
+    
+            <label>Categoria (Tema) *</label>
+            <input type="text" placeholder="Categoria aqui" required>
+            
+            <div class="row">
+              <div class="input-group">
+                <label>Altura *</label>
+                <input type="text" placeholder="Altura *" required>
+              </div>
+              <div class="input-group">
+                <label>Largura *</label>
+                <input type="text" placeholder="Largura *" required>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="input-group">
+                <label>Comprimento *</label>
+                <input type="text" placeholder="Comprimento *" required>
+              </div>
+              <div class="input-group">
+                <label>Peso *</label>
+                <input type="text" placeholder="Peso *" required>
+              </div>
+            </div>
+    
+            <label>Cor *</label>
+            <input type="text" placeholder="Cor" required>
+    
+            <div class="row">
+              <div class="input-group">
+                <label>Preço padrão *</label>
+                <input type="number" placeholder="R$ 100,00" step="0.01" min="0">
+              </div>
+              <div class="input-group">
+                <label>Preço em promoção</label>
+                <input type="number" placeholder="R$ 90,00" step="0.01" min="0">
+              </div>
+            </div>
+
+              <label>Tags</label>
+              <div class="tags-editor">
+                <div class="tags-container" id="tags-container"></div>
+                <textarea 
+                  id="tags-input" 
+                  placeholder="Digite as tags e pressione espaço para adicionar"
+                  rows="2"
+                ></textarea>
+            </div>
+          </div>
+
+          <!-- Coluna direita -->
+          <div class="form-right">
+            <div class="image-upload-container">
+              <div class="image-preview" id="imagePreview"></div>
+              <p>Galeria de imagens do produto</p>
+              <div class="image-upload-box">
+                <label class="upload-area" id="uploadArea">
+                  <input type="file" id="fileInput" accept=".jpg,.jpeg,.png" multiple hidden>
+                  <span>Drop your image here, or browse<br><small>JPEG, PNG are allowed</small></span>
+                </label>
+              </div>
+              <div class="uploaded-images" id="uploadedImages"></div>
+            </div>
+            
+            <div class="form-actions">
+              <button type="submit" class="btn-submit">Cadastrar</button>
+              <button type="button" class="btn-cancel">Cancelar</button>
+            </div>
+          </div>
+        </div>
+        
+      </form>
+    </div>    
   </div>
 
   <div class="bottom-bar">
