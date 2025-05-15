@@ -1,6 +1,6 @@
 .contato-flutuante {
     position: fixed;
-    bottom: 100px;
+    bottom: 150px;
     right: 50px;
     z-index: 1000;
     display: flex;

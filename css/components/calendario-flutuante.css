@@ -1,6 +1,6 @@
 .calendario-flutuante {
   position: fixed;
-  bottom: 180px;
+  bottom: 220px;
   right: 50px;
   z-index: 1000;
   display: flex;
