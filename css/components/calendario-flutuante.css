@@ -63,6 +63,7 @@
   top: 0;
   left: 0;
   width: 100%;
+  
   height: 100%;
   background-color: rgba(0, 0, 0, 0.5);
   z-index: 1000;
@@ -72,11 +73,31 @@
 
 /* Estilo para o conteúdo do modal */
 .modal-content {
-  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 400px;
   background-color: white;
   padding: 20px;
   border-radius: 5px;
   position: relative;
+}
+.modal-texts{
+  display: flex;
+  text-align: center;
+  align-items: center;
+  background-color: var(--neutral-light);
+  border-radius: var(--border-radius);
+  padding: 10px;
+  margin: 5px;
+  box-shadow: var(--box-shadow);
+}
+#dot{
+  background-color: grey;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  margin-right: 5px;
 }
 
 /* Estilo para o botão de fechar */
@@ -114,11 +135,13 @@
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     overflow: hidden;
     width: 320px;
+    box-shadow: var(--box-shadow);
+    border: solid 1px grey;
   }
 
   .calendar-header {
     text-align: center;
-    background: #6c63ff;
+    background: #505050;
     color: #fff;
     padding: 1rem;
     font-size: 1.2rem;
@@ -132,7 +155,7 @@
   }
 
   .weekdays div {
-    background: #eee;
+    background: #b6b6b6;
     padding: 0.5rem 0;
     font-weight: bold;
   }
@@ -144,7 +167,7 @@
   }
 
   .days div:hover {
-    background: #6c63ff;
+    background: #595959;
     color: white;
     cursor: pointer;
   }
