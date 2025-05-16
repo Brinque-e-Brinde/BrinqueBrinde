@@ -50,7 +50,7 @@ brinque-brinde/
         └── lists-products.css  # estilos lista os produto 
 │   └── pages/            # estilos específicos de cada página
 │       └── home.css      # estilos exclusivos da home
-│       └── users-tela_filtros css.css # estilos da tela de filtros
+│       └── users-tela-filtros.css # estilos da tela de filtros
 ├── js/
 │   ├── lib/              # bibliotecas de terceiros (ex: Axios, Lodash)
 │   └── modules/          # código modularizado
@@ -58,7 +58,7 @@ brinque-brinde/
 │       └── pagina.js     # lógica exclusiva de páginas
         └── produtc-card.js  # interatividade para exibir e descreve produto
         └── lists-products.js  # interatividade para listar os produto 
-│       └── users-Tela filtros JS.js # javascript da tela de filtros
+│       └── users-Tela_filtros.js # javascript da tela de filtros
 ├── data/                 # mocks em JSON
 │   └── mock-data.json
 └── README.md             # documentação deste projeto
