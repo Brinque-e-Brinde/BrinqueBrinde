@@ -3,23 +3,24 @@
 
 <head>
   <meta charset="UTF-8">
-  <link rel="stylesheet" href="../css/main.css">
+  <!-- <link rel="stylesheet" href="../css/main.css"> -->
   <link rel="stylesheet" href="../../css/pages/home.css">
   <link rel="stylesheet" href="../../css/components/header.css">
   <link rel="stylesheet" href="../../css/components/footer.css">
   <link rel="stylesheet" href="../../css/components/contato-flutuante.css">
   <link rel="stylesheet" href="../../css/components/calendario-flutuante.css">
-  <script type="text/javascript" src="../../js/modules/modal-calendar.js" defer></script>
 
+<!-- font poppins -->
   <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet" />
-  
+
 </head>
 
 <body>
   <header>
-    
+<!-- modulo header -->
   </header>
 
+  <!-- Banner rotativo -->
   <section>
     <div id="banner">
       <img src="../../assets/images/banner01.png" class="active">
@@ -27,32 +28,31 @@
       <img src="../../assets/images/banner03.png">
     </div>
   </section>
-  
+
   <main>
     <div class="main">
       <h2>Destaques</h2>
-    <div class="destaques">
-
-      <div class="card">Produto 1</div>
-      <div class="card">Produto 2</div>
-      <div class="card">Produto 3</div>
-      <div class="card">Produto 4</div>
-      <div class="card">Produto 5</div>
-      <div class="card">Produto 6</div>
-
+      <div id="produtos">
+<!-- lista de produtos carregados a partir do javascript e json -->
+      </div>
     </div>
-    </div>
-    
   </main>
-  <div id="contato-flutuante" ></div>
-  <div id="calendario-flutuante"></div>
+
+  <div id="contato-flutuante">
+    <!-- modulo contato flutuante -->
+  </div>
+  <div id="calendario-flutuante">
+    <!-- modulo calendário flutuante com modalde dias disponiveis -->
+  </div>
 
   <footer>
+    <!-- modulo footer -->
   </footer>
-
+<!-- scripts -->
   <script type="text/javascript" src="../../js/modules/modal-calendar.js"></script>
-
-
+  <script type="text/javascript" src="../../js/modules/modal-calendar.js" defer></script>
+  <script type="text/javascript" src="../../js/modules/home.js" defer></script>
+<!-- carregar os módulos -->
   <script type="module">
     import { includeHTML } from '../../js/modules/include.js';
     includeHTML('header', '../../components/header.html');
@@ -60,16 +60,7 @@
     includeHTML('#contato-flutuante', '../../components/contato-flutuante.html');
     includeHTML('#calendario-flutuante', '../../components/calendario-flutuante.html');
   </script>
-  <script>
-    const imagens = document.querySelectorAll('#banner img');
-    let index = 0;
 
-    setInterval(() => {
-      imagens[index].classList.remove('active');
-      index = (index + 1) % imagens.length;
-      imagens[index].classList.add('active');
-    }, 3000);
-  </script>
 </body>
 
 </html>

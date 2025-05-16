@@ -5,14 +5,6 @@
   box-sizing: border-box;
 }
 
-
-/* 
-body {
-  font-family: 'Arial', sans-serif;
-  color: var(--neutral-dark);
-  background-color: var(--neutral-light);
-} */
-
 /* Upper header com fundo escuro */
 #upper_header {
   display: flex;
@@ -50,7 +42,7 @@ body {
   transform: scale(1.05);
 }
 
-/* Campo de busca com borda amarela no hover */
+/* Campo de busca */
 #search {
   padding: 10px 15px;
   width: 300px;
@@ -84,7 +76,7 @@ body {
   position: relative;
 }
 
-/* Ícones brancos no header escuro */
+
 .upper_header_components_right img {
   width: 40px;
   transition: transform var(--transition-speed);
@@ -95,7 +87,7 @@ body {
   transform: scale(1.1);
 }
 
-/* Badge azul para o carrinho */
+
 .cart-badge {
   position: absolute;
   top: -5px;
@@ -112,7 +104,7 @@ body {
   font-weight: bold;
 }
 
-/* Container do WhatsApp */
+/* Container do contatos */
 .whatsapp-wrapper {
   position: relative;
   display: inline-block;
