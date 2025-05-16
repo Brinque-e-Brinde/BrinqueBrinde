@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <!-- <link rel="stylesheet" href="../css/main.css"> -->
+  <link rel="stylesheet" href="../../css/pages/home.css">
+  <link rel="stylesheet" href="../../css/components/header.css">
+  <link rel="stylesheet" href="../../css/components/footer.css">
+  <link rel="stylesheet" href="../../css/components/contato-flutuante.css">
+
+<!-- font poppins -->
+  <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet" />
+
+</head>
+
+<body>
+  <header>
+<!-- modulo header -->
+  </header>
+
+  <main>
+
+  </main>
+
+  <div id="contato-flutuante">
+    <!-- modulo contato flutuante -->
+  </div>
+  
+  <footer>
+    <!-- modulo footer -->
+  </footer>
+<!-- scripts -->
+
+<!-- carregar os módulos -->
+  <script type="module">
+    import { includeHTML } from '../../js/modules/include.js';
+    includeHTML('header', '../../components/header.html');
+    includeHTML('footer', '../../components/footer.html');
+    includeHTML('#contato-flutuante', '../../components/contato-flutuante.html');
+  </script>
+
+</body>
+
+</html>
