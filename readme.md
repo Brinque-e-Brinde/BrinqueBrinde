@@ -32,7 +32,9 @@
 ```plaintext
 brinque-brinde/
 ├── pages/                # todas as telas HTML
-│   └── home.html         # exemplo de página
+│   ├── home.html         # exemplo de página
+│   └── user/             # pasta para a tela de usuários
+│       └── Tela filtros html.html # sua nova tela
 ├── components/           # pedaços de HTML reutilizáveis
 │   ├── header.html       # cabeçalho
 │   └── footer.html       # rodapé
@@ -40,21 +42,24 @@ brinque-brinde/
     └── lists-products.html  # lista os produto 
 ├── assets/               # recursos estáticos
 │   └── images/           # imagens
+│   └── produtos/         # imagens dos produtos 
 ├── css/
 │   ├── components/       # estilos de cada componente
 │   │   ├── header.css    # estilos do cabeçalho
 │   │   └── footer.css    # estilos do rodapé
         └── produtc-card.css    # estilos exibe e descreve produto
         └── lists-products.css  # estilos lista os produto 
-│   └── pages/            # sobrescritas específicas de cada página
+│   └── pages/            # estilos específicos de cada página
 │       └── home.css      # estilos exclusivos da home
+│       └── users-tela-filtros.css # estilos da tela de filtros
 ├── js/
 │   ├── lib/              # bibliotecas de terceiros (ex: Axios, Lodash)
 │   └── modules/          # código modularizado
 │       ├── include.js    # carrega componentes HTML
 │       └── pagina.js     # lógica exclusiva de páginas
-        └── produtc-card.js  # interatividade para exibir e descrever produto
+        └── produtc-card.js  # interatividade para exibir e descreve produto
         └── lists-products.js  # interatividade para listar os produto 
+│       └── users-Tela_filtros.js # javascript da tela de filtros
 ├── data/                 # mocks em JSON
 │   └── mock-data.json
 └── README.md             # documentação deste projeto

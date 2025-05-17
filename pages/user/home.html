@@ -1,24 +1,66 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
   <meta charset="UTF-8">
-  <link rel="stylesheet" href="../css/main.css">
-  <script type="module" src="../js/main.js"></script>
-  <script type="module">
-    import { includeHTML } from '../js/modules/include.js';
-    includeHTML('header', '../components/header.html');
-    includeHTML('footer', '../components/footer.html');
-  </script>
+  <!-- <link rel="stylesheet" href="../css/main.css"> -->
+  <link rel="stylesheet" href="../../css/pages/home.css">
+  <link rel="stylesheet" href="../../css/components/header.css">
+  <link rel="stylesheet" href="../../css/components/footer.css">
+  <link rel="stylesheet" href="../../css/components/contato-flutuante.css">
+  <link rel="stylesheet" href="../../css/components/calendario-flutuante.css">
+
+<!-- font poppins -->
+  <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet" />
+
 </head>
+
 <body>
   <header>
-
+<!-- modulo header -->
   </header>
+
+  <!-- Banner rotativo -->
+  <section>
+    <div id="banner">
+      <img src="../../assets/images/banner01.png" class="active">
+      <img src="../../assets/images/banner02.png">
+      <img src="../../assets/images/banner03.png">
+    </div>
+  </section>
+
   <main>
-
+    <div class="main">
+      <h2>Destaques</h2>
+      <div id="produtos">
+<!-- lista de produtos carregados a partir do javascript e json -->
+      </div>
+    </div>
   </main>
-  <footer>
 
+  <div id="contato-flutuante">
+    <!-- modulo contato flutuante -->
+  </div>
+  <div id="calendario-flutuante">
+    <!-- modulo calendário flutuante com modalde dias disponiveis -->
+  </div>
+
+  <footer>
+    <!-- modulo footer -->
   </footer>
+<!-- scripts -->
+  <script type="text/javascript" src="../../js/modules/modal-calendar.js"></script>
+  <script type="text/javascript" src="../../js/modules/modal-calendar.js" defer></script>
+  <script type="text/javascript" src="../../js/modules/home.js" defer></script>
+<!-- carregar os módulos -->
+  <script type="module">
+    import { includeHTML } from '../../js/modules/include.js';
+    includeHTML('header', '../../components/header.html');
+    includeHTML('footer', '../../components/footer.html');
+    includeHTML('#contato-flutuante', '../../components/contato-flutuante.html');
+    includeHTML('#calendario-flutuante', '../../components/calendario-flutuante.html');
+  </script>
+
 </body>
+
 </html>

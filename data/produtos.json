@@ -1,0 +1,39 @@
+[
+    {
+      "id": 1,
+      "imagem": "../../assets/images/produtos/copo_unicornio.jpg",
+      "descricao": "Copo personalizado tema Unicórnio",
+      "preco": 9.90
+    },
+    {
+      "id": 2,
+      "imagem": "../../assets/images/produtos/sacolinhas_herois.jpg",
+      "descricao": "Sacolinha surpresa tema Super-heróis",
+      "preco": 5.50
+    },
+    {
+      "id": 3,
+      "imagem": "../../assets/images/produtos/chapeu_dinossauro.jpg",
+      "descricao": "Chapéu de festa tema Dinossauro",
+      "preco": 4.00
+    },
+    {
+        "id": 4,
+        "imagem": "../../assets/images/produtos/bandeira_princesas.jpg",
+        "descricao": "Bandeirola decorativa tema Princesas",
+        "preco": 6.25
+      },
+      {
+        "id": 5,
+        "imagem": "../../assets/images/produtos/convite.jpg",
+        "descricao": "Convite tema Espaço Sideral",
+        "preco": 3.90
+      },
+      {
+        "id": 6,
+        "imagem": "../../assets/images/produtos/kit_lembrancinhas.jpg",
+        "descricao": "Kit de lembrancinhas tema Safari",
+        "preco": 12.75
+      }
+  ]
+  
