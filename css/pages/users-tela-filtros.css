@@ -1,0 +1,103 @@
+   body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      display: flex;
+      background-color: #f2f2f2;
+    }
+
+    /* Sidebar de filtros */
+    .filtros {
+      width: 220px;
+      background-color: #fff;
+      padding: 20px;
+      border-right: 1px solid #ccc;
+    }
+
+    .filtros h3 {
+      margin-top: 20px;
+      font-size: 16px;
+    }
+
+    .filtros label {
+      display: block;
+      margin: 5px 0;
+    }
+
+    /* Área principal */
+    .conteudo {
+      flex: 1;
+      padding: 30px;
+    }
+
+    .titulo {
+      font-size: 22px;
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+
+    .produtos {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      gap: 20px;
+    }
+
+    .produto {
+      background-color: #fff;
+      padding: 15px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease;
+    }
+
+    .produto:hover {
+      transform: translateY(-5px);
+    }
+
+    .imagem {
+      width: 100%;
+      height: 150px;
+      background: repeating-linear-gradient(
+        45deg,
+        #ddd,
+        #ddd 10px,
+        #eee 10px,
+        #eee 20px
+      );
+      border-radius: 6px;
+      margin-bottom: 10px;
+    }
+
+    .descricao {
+      font-size: 14px;
+      margin-bottom: 5px;
+    }
+
+    .preco {
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    .acoes {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .acoes input {
+      width: 30px;
+      text-align: center;
+    }
+
+    .btn-adicionar {
+      background-color: #333;
+      color: #fff;
+      border: none;
+      padding: 5px 10px;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    .btn-adicionar:hover {
+      background-color: #555;
+    }
