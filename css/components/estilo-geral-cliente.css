@@ -1,0 +1,46 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+/* Paleta de cores com azul, vermelho e amarelo + cores neutras */
+:root {
+  /* Cores primárias(mudadas para cores neutras por enquanto) */
+  --blue-primary: #0066cc;
+  --blue-primary: #858585;
+  --red-primary: #e63946;
+  --red-primary: #757575;
+  --yellow-primary: #ffbe0b;
+  --yellow-primary: #bbbbbb;
+
+  /* Cores neutras */
+  --neutral-dark: #333333;
+  --neutral-medium: #777777;
+  --neutral-light: #f5f5f5;
+  --white: #ffffff;
+
+  /* Cores de destaque e funcionais */
+  --accent-color: var(--blue-primary);
+  --header-bg: var(--neutral-dark);
+  --menu-bg: var(--red-primary);
+  --submenu-bg: #444444;
+
+  /* Espaçamentos e elementos de design */
+  --spacing-sm: 8px;
+  --spacing-md: 16px;
+  --spacing-lg: 24px;
+  --spacing-xl: 50px;
+  --border-radius: 8px;
+  --box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  --transition-speed: 0.3s;
+}
+html {
+  height: 100%;
+}
+body {
+  font-family: "Poppins", "sans-serif";
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
