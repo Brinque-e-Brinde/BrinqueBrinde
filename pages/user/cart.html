@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <!-- <link rel="stylesheet" href="../css/main.css"> -->
+    <link rel="stylesheet" href="../../css/pages/cart.css">
+    <link rel="stylesheet" href="../../css/components/header.css">
+    <link rel="stylesheet" href="../../css/components/footer.css">
+    <link rel="stylesheet" href="../../css/components/contato-flutuante.css">
+
+    <!-- font poppins -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet" />
+
+</head>
+
+<body>
+    <header>
+        <!-- modulo header -->
+    </header>
+
+    <main>
+        <div id="cart_main">
+            <div class="sections" id="titulo">
+                <h3>Meu carrinho</h3>
+                <button>Continuar</button>
+            </div>
+            <hr>
+            <div class="sections" id="foto_descricao_preco">
+                <div id="desc">
+                    <div class="img_container">
+                        <div class="img_placeholder">IMG</div>
+                    </div>
+                    <div id="desc_container">
+                        <p>Descrição do item</p>
+                        <p>Código: 012345</p>
+                    </div>
+
+                </div>
+                <div id="qtdeSelector">
+                    <div class="quantity-selector">
+                        <button>-</button>
+                        <input type="number" value="1" min="1">
+                        <button>+</button>
+                    </div>
+                </div>
+                <div id="preco">
+                    <p>R$10,00</p>
+                </div>
+            </div>
+            <hr>
+            <div class="sections">
+                <div class="frete">
+                    <h4>Frete</h4>
+                    <div class="frete-form">
+                        <input type="text" placeholder="Digite seu CEP">
+                        <a href="#">Esqueci meu CEP</a>
+                    </div>
+                </div>
+
+                <div class="resumo">
+                    <h4>Resumo do pedido</h4>
+                    <div class="resumo-info">
+                        <div class="linha">
+                            <span>Subtotal:</span>
+                            <span><strong>R$ 10,00</strong></span>
+                        </div>
+                        <div class="linha">
+                            <span>Total do pedido:</span>
+                            <span><strong>R$ 10,00</strong></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <hr>
+            <div class="sections" id="pref_entrega">
+                <div class="preferencias">
+                    <h4>Preferências pelo dia da entrega</h4>
+                    <br>
+                    <p>
+                        <span class="circulo-cinza"></span>
+                        Dias indisponíveis
+                    </p>
+                    <!-- Calendário -->
+                    <div class="calendario">
+                        <div class="cabecalho">
+                          <h4>Maio 2025</h4>
+                        </div>
+                        <div class="dias-semana">
+                          <div>Dom</div><div>Seg</div><div>Ter</div><div>Qua</div><div>Qui</div><div>Sex</div><div>Sáb</div>
+                        </div>
+                        <div class="dias">
+                          <div class="dia vazio"></div><div class="dia vazio"></div><div class="dia vazio"></div><div class="dia vazio"></div>
+                          <!--manualmente os 31 dias -->
+                          <div class="dia">1</div><div class="dia">2</div><div class="dia">3</div>
+                          <div class="dia">4</div><div class="dia">5</div><div class="dia">6</div><div class="dia">7</div><div class="dia">9</div><div class="dia">10</div><div class="dia">11</div>
+                          <div class="dia">12</div><div class="dia">13</div><div class="dia">14</div><div class="dia">15</div><div class="dia">16</div><div class="dia">17</div><div class="dia">18</div>
+                          <div class="dia">19</div><div class="dia">20</div><div class="dia">21</div><div class="dia">22</div><div class="dia">23</div><div class="dia">24</div><div class="dia">25</div>
+                          <div class="dia">26</div><div class="dia">27</div><div class="dia">28</div><div class="dia">29</div><div class="dia">30</div><div class="dia">31</div>
+                        </div>
+                      </div>
+                    <!-- Fim Calendário -->
+                </div>
+                <div class="opcoes_calendar">
+                    <label>
+                        <input type="checkbox" id="agendarData">
+                        Quero agendar para uma data específica
+                      </label>
+                    
+                      <div class="campo-data">
+                        <input type="date" id="dataEspecifica">
+                      </div>
+                    
+                      <label>
+                        <input type="checkbox" id="padraoEntrega">
+                        Pode seguir o padrão
+                      </label>
+                    
+                      <p class="descricao-padrao">
+                        *As entregas são feitas por padrão depois de x horas após a confirmação do pagamento.
+                      </p>
+                      <p class="descricao-padrao">
+                        *Se a quantidade de pedidos estiver muito alta em um dia, agendaremos para o próximo. 
+                      </p>
+                      <p class="descricao-padrao">
+                        *Confira ao lado no calendário nossa disponibilidade  
+                      </p>
+                </div>
+            </div>
+            <div class="sections">
+                <button>Adicionar mais produtos</button>
+                <button>Continuar</button>
+            </div>
+        </div>
+    </main>
+
+    <div id="contato-flutuante">
+        <!-- modulo contato flutuante -->
+    </div>
+
+    <footer>
+        <!-- modulo footer -->
+    </footer>
+    <!-- scripts -->
+
+    <!-- carregar os módulos -->
+    <script type="module">
+        import { includeHTML } from '../../js/modules/include.js';
+        includeHTML('header', '../../components/header.html');
+        includeHTML('footer', '../../components/footer.html');
+        // includeHTML('#contato-flutuante', '../../components/contato-flutuante.html');
+    </script>
+
+</body>
+
+</html>

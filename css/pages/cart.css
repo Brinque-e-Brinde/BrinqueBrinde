@@ -1,0 +1,208 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Poppins", Courier, monospace;
+}
+#cart_main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  max-width: 1000px;
+  margin: 0px auto;
+}
+hr {
+  border: solid 2px rgb(163, 163, 163);
+}
+.sections {
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px; /* Espaço entre frete e resumo */
+  padding: 10px;
+}
+#titulo {
+  display: flex;
+  justify-content: space-between;
+}
+.sections button {
+  padding: 5px 20px 5px 20px;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 5px;
+  background-color: rgb(206, 206, 206);
+  border: solid 1px grey;
+}
+.sections button:hover {
+  background-color: rgb(153, 153, 153);
+}
+
+#foto_descricao_preco {
+  display: flex;
+}
+#desc {
+  flex: 1;
+  display: flex;
+}
+.img_container {
+  width: 100px;
+  height: 100px;
+  border: solid 1px black;
+  border-radius: 5px;
+}
+#desc_container {
+  padding: 0px 5px;
+}
+#qtdeSelector {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.quantity-selector {
+  display: flex;
+  align-items: center;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.quantity-selector button {
+  background: #f0f0f0;
+  border: none;
+  width: 25px;
+  height: 30px;
+  cursor: pointer;
+}
+
+.quantity-selector input {
+  width: 30px;
+  text-align: center;
+  border: none;
+  outline: none;
+}
+#preco {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 20px;
+  font-weight: bold;
+}
+
+.frete,.resumo {
+  flex: 1;
+  border: 1px solid #ccc;
+  padding: 15px;
+  border-radius: 5px;
+}
+
+.frete-form {
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.frete-form input {
+  flex: 1;
+  padding: 5px;
+  border: 1px solid #aaa;
+  border-radius: 4px;
+}
+
+.frete-form a {
+  font-size: 0.9em;
+  color: #007bff;
+  text-decoration: none;
+}
+
+.frete-form a:hover {
+  text-decoration: underline;
+}
+
+.resumo-info .linha {
+  display: flex;
+  justify-content: space-between; /* <-- Preço vai para a direita */
+  margin: 8px 0;
+}
+
+#pref_entrega{
+    
+}
+.circulo-cinza {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-color: gray;
+    border-radius: 50%;
+    margin-right: 8px;
+  }
+.opcoes_calendar input[type="checkbox"] {
+    margin-right: 8px;
+  }
+  
+  .campo-data input[type="date"] {
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .descricao-padrao {
+    font-size: 14px;
+    color: #555;
+    margin: 0;
+  }
+  /* Calendário */
+  .calendario {
+    max-width: 350px;
+    margin: 20px auto;
+    font-family: sans-serif;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    overflow: hidden;
+    font-size: 14px;
+  }
+  
+  .cabecalho {
+    text-align: center;
+    padding: 10px;
+    background-color: #f3f3f3;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  .dias-semana, .dias {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+  }
+  
+  .dias-semana div {
+    text-align: center;
+    padding: 8px 0;
+    background-color: #eee;
+    font-weight: bold;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  .dia {
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #ddd;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  .dia:hover {
+    background-color: #dcdcdc;
+  }
+  
+  .vazio {
+    border: none;
+    background: transparent;
+    cursor: default;
+  }
+  
