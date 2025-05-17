@@ -1,0 +1,336 @@
+/* Reset para garantir consistência entre navegadores */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Upper header com fundo escuro */
+#upper_header {
+  display: flex;
+  background-color: var(--header-bg);
+  padding: var(--spacing-md) 0;
+  box-shadow: var(--box-shadow);
+  align-items: center;
+  justify-content: space-between;
+}
+
+.upper_header_components {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#logo_container {
+  width: 100%;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  margin-left: var(--spacing-xl);
+}
+
+/* Estilo do logo */
+#logo_container img {
+  width: 100px;
+  height: auto;
+  border-radius: var(--border-radius);
+  transition: transform var(--transition-speed);
+}
+
+#logo_container img:hover {
+  transform: scale(1.05);
+}
+
+/* Campo de busca */
+#search {
+  padding: 10px 15px;
+  width: 300px;
+  border-radius: var(--border-radius);
+  border: solid 1px var(--neutral-light);
+  font-size: 16px;
+  outline: none;
+  transition: all var(--transition-speed);
+  background-color: var(--white);
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="gray" viewBox="0 0 16 16"><path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/></svg>');
+  background-repeat: no-repeat;
+  background-position: calc(100% - 10px) center;
+  padding-right: 35px;
+}
+
+#search:hover, #search:focus {
+  border: solid 1px var(--yellow-primary);
+  box-shadow: 0 0 5px rgba(255, 190, 11, 0.3);
+}
+
+#components_right {
+  display: flex;
+  justify-content: right;
+  margin-right: var(--spacing-xl);
+  gap: var(--spacing-lg);
+}
+
+.upper_header_components_right a {
+  all: unset;
+  cursor: pointer;
+  position: relative;
+}
+
+
+.upper_header_components_right img {
+  width: 40px;
+  transition: transform var(--transition-speed);
+  filter: brightness(0) invert(1);
+}
+
+.upper_header_components_right img:hover {
+  transform: scale(1.1);
+}
+
+
+.cart-badge {
+  position: absolute;
+  top: -5px;
+  right: -5px;
+  background-color: var(--blue-primary);
+  color: white;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+/* Container do contatos */
+.whatsapp-wrapper {
+  position: relative;
+  display: inline-block;
+}
+
+/* Estilo básico para o ícone */
+
+
+/* Dropdown de contatos */
+.whatsapp-contacts {
+  position: absolute;
+  display: none;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  padding: 10px;
+  width: 200px;
+  right: 0;
+  z-index: 100;
+}
+
+/* Exibe o dropdown ao passar o mouse */
+.whatsapp-wrapper:hover .whatsapp-contacts {
+  display: block;
+}
+
+/* Estilo para cada contato */
+.whatsapp-contact {
+  padding: 8px;
+  border-bottom: 1px solid #eee;
+}
+
+.whatsapp-contact:last-child {
+  border-bottom: none;
+}
+
+.whatsapp-contact a {
+  color: #333;
+  text-decoration: none;
+  display: block;
+}
+
+.whatsapp-contact a:hover {
+  background-color: #f5f5f5;
+}
+
+/* Título do dropdown */
+.whatsapp-title {
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 8px;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #ddd;
+}
+
+/* USER DROPDOWN */
+/* Container do WhatsApp */
+.acount-wrapper {
+  position: relative;
+  display: inline-block;
+}
+
+/* Estilo básico para o ícone */
+
+/* Dropdown de contatos */
+.acount-drop {
+  position: absolute;
+  display: none;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  padding: 10px;
+  width: 150px;
+  right: 0;
+  z-index: 100;
+}
+
+/* Exibe o dropdown ao passar o mouse */
+.acount-wrapper:hover .acount-drop {
+  display: block;
+}
+
+/* Estilo para cada contato */
+.acount-drop {
+  padding: 8px;
+  border-bottom: 1px solid #eee;
+  text-align: center;
+}
+
+.acount-drop:last-child {
+  border-bottom: none;
+}
+
+.acount-drop a {
+  color: #333;
+  text-decoration: none;
+  display: block;
+}
+
+.acount-drop a:hover {
+  background-color: #f5f5f5;
+}
+
+/* Título do dropdown */
+.acount-title {
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 8px;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #ddd;
+}
+
+/* Menu principal vermelho */
+.menu {
+  background-color: var(--menu-bg);
+  font-family: sans-serif;
+  position: relative;
+}
+
+.menu-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.menu-item {
+  position: relative;
+}
+
+.menu-item a {
+  display: block;
+  padding: 1rem;
+  color: white;
+  text-decoration: none;
+  transition: background-color var(--transition-speed);
+}
+
+.menu-item > a {
+  position: relative;
+}
+
+/* Seta para indicar submenu */
+.menu-item > a:after {
+  content: '▼';
+  font-size: 8px;
+  margin-left: 5px;
+  vertical-align: middle;
+}
+
+/* Hover em amarelo para destacar */
+.menu-item a:hover {
+  background-color: var(--yellow-primary);
+  color: var(--neutral-dark);
+}
+
+.submenu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: var(--submenu-bg);
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  min-width: 200px;
+  z-index: 1000;
+  border-radius: 0 0 var(--border-radius) var(--border-radius);
+  box-shadow: var(--box-shadow);
+}
+
+.submenu li a {
+  display: block;
+  padding: 0.75rem 1rem;
+  color: white;
+  text-decoration: none;
+  transition: background-color var(--transition-speed), padding var(--transition-speed);
+}
+
+/* Submenu com hover destacado em amarelo */
+.submenu li a:hover {
+  background-color: var(--yellow-primary);
+  color: var(--neutral-dark);
+  padding-left: 1.5rem;
+}
+
+.menu-item:hover .submenu {
+  display: block;
+}
+
+/* Botão de menu para dispositivos móveis */
+.menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 1.5rem;
+  cursor: pointer;
+  padding: 1rem;
+}
+
+/* Media queries para responsividade */
+@media (max-width: 992px) {
+  #upper_header {
+    flex-direction: column;
+    padding: var(--spacing-sm);
+  }
+  
+  .upper_header_components {
+    margin: var(--spacing-sm) 0;
+  }
+  
+  #logo_container {
+    margin-left: var(--spacing-md);
+    justify-content: center;
+  }
+  
+  #search {
+    width: 250px;
+  }
+  
+  #components_right {
+    margin-right: var(--spacing-md);
+    gap: var(--spacing-md);
+  }
+}

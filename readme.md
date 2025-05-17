@@ -40,6 +40,7 @@ brinque-brinde/
     └── lists-products.html  # lista os produto 
 ├── assets/               # recursos estáticos
 │   └── images/           # imagens
+│   └── produtos/         # imagens dos produtos 
 ├── css/
 │   ├── components/       # estilos de cada componente
 │   │   ├── header.css    # estilos do cabeçalho
