@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Brinque e Brinde</title>
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+  />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../css/pages/admin-menu.css">
+</head>
+<body>
+  <!-- Top Bar -->
+  <div class="top-bar">
+    <div class="rectangle-left">
+      <span>Logo</span>
+      <span>Brinque Brinde</span>
+    </div>
+    
+    <div class="admin-icon-container">
+      <i class="fa-regular fa-bell"></i>
+      <div class="rectangle">
+        <span>Admin</span>
+        <i class="fas fa-angle-down"></i>
+      </div>
+    </div>
+  </div>
+
+  <!-- Sidebar -->
+  <div class="sidebar">
+    <button onclick="loadContent('dashboard')">Dashboard</button>
+    <button onclick="loadContent('categorias')">Categorias</button>
+    <button onclick="loadContent('produtos')">Produtos</button>
+    <button onclick="loadContent('pedidos')">Pedidos</button>
+    <button onclick="loadContent('pagina-inicial')">Página Inicial</button>
+  </div>
+
+  <!-- Main Content -->
+  <div class="content" id="content">
+    <!-- O conteúdo será carregado dinamicamente -->
+  </div>
+
+  <!-- Bottom Bar -->
+  <div class="bottom-bar">
+    Brinque e Brinde - CNPJ: 00.000.000/0001-00 todos os direitos reservados 2025
+  </div>
+
+  <script src="../../js/modules/sidebar.js" defer></script>
+  <script src="../../js/modules/add-product.js" defer></script>
+</body>
+</html>
