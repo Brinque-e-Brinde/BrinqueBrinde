@@ -1,14 +1,28 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
   <meta charset="UTF-8">
   <title>Tela de Filtros</title>
+  <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet" />
+  <link rel="stylesheet" href="../../css/components/header.css">
+  <link rel="stylesheet" href="../../css/components/footer.css">
+  <link rel="stylesheet" href="../../css/components/estilo-geral-cliente.css">
   <link rel="stylesheet" href="../../css/pages/users-tela-filtros.css">
-  <script defer src="../../js/modules/users-Tela_filtros.js"></script>
+
+  
+  <link rel="stylesheet" href="../../css/components/contato-flutuante.css">
+  <link rel="stylesheet" href="../../css/components/calendario-flutuante.css">
 </head>
 
 <body>
-<aside class="filtros">
+  <header>
+    <!-- modulo header -->
+  </header>
+  <div class="main_filtros">
+
+  
+  <aside class="filtros">
     <h2>Filtros</h2>
 
     <h3>Tema</h3>
@@ -102,7 +116,7 @@
         </div>
       </div>
 
-     <div class="produto">
+      <div class="produto">
         <div class="imagem"></div>
         <div class="descricao">Descrição do item em duas linhas</div>
         <div class="preco">R$ 70,00</div>
@@ -114,7 +128,7 @@
         </div>
       </div>
 
-     <div class="produto">
+      <div class="produto">
         <div class="imagem"></div>
         <div class="descricao">Descrição do item em duas linhas</div>
         <div class="preco">R$ 80,00</div>
@@ -128,5 +142,27 @@
 
     </section>
   </main>
+</div>
+<div id="contato-flutuante">
+  <!-- modulo contato flutuante -->
+</div>
+<div id="calendario-flutuante">
+  <!-- modulo calendário flutuante com modalde dias disponiveis -->
+</div>
+  <footer>
+    <!-- modulo footer -->
+  </footer>
+  <!-- scripts -->
+  <script defer src="../../js/modules/users-Tela_filtros.js"></script>
+  <script type="text/javascript" src="../../js/modules/modal-calendar.js" defer></script>
+  <!-- carregar os módulos -->
+  <script type="module">
+    import { includeHTML } from '../../js/modules/include.js';
+    includeHTML('header', '../../components/header.html');
+    includeHTML('footer', '../../components/footer.html');
+    includeHTML('#contato-flutuante', '../../components/contato-flutuante.html');
+    includeHTML('#calendario-flutuante', '../../components/calendario-flutuante.html');
+  </script>
 </body>
+
 </html>

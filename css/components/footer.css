@@ -8,7 +8,7 @@
   align-items: center;
 }
 
-.sections{
+.sections_footer{
  display: flex;
  flex-direction: column;
  gap: 5px;
