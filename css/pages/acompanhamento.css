@@ -1,6 +1,10 @@
   main {
     padding: 0 20%;
     background: #fff;
+    flex: 1;
+  }
+  .main_acompanhamento{
+    margin-top: 20px;
   }
   
   .pedido-info {

@@ -1,73 +1,82 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="../css/main.css">
-    <link rel="stylesheet" href="../../css/pages/acompanhamento.css">
-    <script type="module" src="../js/main.js"></script>
-    <script type="module">
-        import { includeHTML } from '../js/modules/include.js';
-        includeHTML('header', '../components/header.html');
-        includeHTML('footer', '../components/footer.html');
-    </script>
+  <meta charset="UTF-8">
+  <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet" />
+  <link rel="stylesheet" href="../../css/pages/acompanhamento.css">
+  <link rel="stylesheet" href="../../css/components/header.css">
+  <link rel="stylesheet" href="../../css/components/footer.css">
+  <link rel="stylesheet" href="../../css/components/estilo-geral-cliente.css">
 </head>
+
 <body>
-    <header></header>
-    <main>
-        <section class="pedido-info">
-          <h2>Pedido #123456</h2>
-          <p>Realizado em 14/04/2025</p>
-        </section>
-    
-        <section class="status">
-          <h3>Status do Pedido</h3>
-          <div class="etapas">
-            <div class="etapa ativa">Pedido Confirmado</div>
-            <div class="etapa ativa">Pagamento Aprovado</div>
-            <div class="etapa ativa">Em Produção</div>
-            <div class="etapa">Pronto para Entrega</div>
-            <div class="etapa">Entregue</div>
-          </div>
-        </section>
-    
-        <section class="conteudo">
-          <div class="item">
-            <h3>Itens do Pedido</h3>
-            <div class="produto">
-              <div class="imagem"></div>
-              <div class="descricao">
-                <p>Descrição do item</p>
-                <p class="cod">Cod.00000</p>
-                <p class="quantidade">Quantidade: ##</p>
-                <p>R$ 10,00</p>
-              </div>
+  <header></header>
+  <main>
+    <div class="main_acompanhamento">
+      <section class="pedido-info">
+        <h2>Pedido #123456</h2>
+        <p>Realizado em 14/04/2025</p>
+      </section>
+
+      <section class="status">
+        <h3>Status do Pedido</h3>
+        <div class="etapas">
+          <div class="etapa ativa">Pedido Confirmado</div>
+          <div class="etapa ativa">Pagamento Aprovado</div>
+          <div class="etapa ativa">Em Produção</div>
+          <div class="etapa">Pronto para Entrega</div>
+          <div class="etapa">Entregue</div>
+        </div>
+      </section>
+
+      <section class="conteudo">
+        <div class="item">
+          <h3>Itens do Pedido</h3>
+          <div class="produto">
+            <div class="imagem"></div>
+            <div class="descricao">
+              <p>Descrição do item</p>
+              <p class="cod">Cod.00000</p>
+              <p class="quantidade">Quantidade: ##</p>
+              <p>R$ 10,00</p>
             </div>
           </div>
-    
-          <div class="resumo">
-            <h3>Resumo do Pedido</h3>
-            <div>
-                <p>Subtotal: <span>R$ 10,00</span></p>
-                <p>Frete: <span>R$ 15,00</span></p>
-            </div>
-            <p>Total: <span>R$ 25,00</span></p>
+        </div>
+
+        <div class="resumo">
+          <h3>Resumo do Pedido</h3>
+          <div>
+            <p>Subtotal: <span>R$ 10,00</span></p>
+            <p>Frete: <span>R$ 15,00</span></p>
           </div>
-        </section>
-    
-        <section class="entrega">
-          <div class="endereco">
-            <h3>Endereço de Entrega</h3>
-            <p>Ana Silva</p>
-            <p>Rua Exemplo, 123 - Salvador/BA - CEP: 40000-000</p>
-          </div>
-    
-          <div class="pagamento">
-            <h3>Forma de Pagamento</h3>
-            <p>Pix</p>
-            <p>Pagamento Confirmado</p>
-          </div>
-        </section>
-      </main>
-    <footer></footer>
+          <p>Total: <span>R$ 25,00</span></p>
+        </div>
+      </section>
+
+      <section class="entrega">
+        <div class="endereco">
+          <h3>Endereço de Entrega</h3>
+          <p>Ana Silva</p>
+          <p>Rua Exemplo, 123 - Salvador/BA - CEP: 40000-000</p>
+        </div>
+
+        <div class="pagamento">
+          <h3>Forma de Pagamento</h3>
+          <p>Pix</p>
+          <p>Pagamento Confirmado</p>
+        </div>
+      </section>
+    </div>
+  </main>
+  <footer>
+    <!-- modulo footer -->
+  </footer>
+  <script type="module">
+    import { includeHTML } from '../../js/modules/include.js';
+    includeHTML('header', '../../components/header.html');
+    includeHTML('footer', '../../components/footer.html');
+  </script>
 </body>
+
 </html>
