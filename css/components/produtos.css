@@ -1,0 +1,53 @@
+#listaPedidos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+  gap: 24px;
+  padding: 24px;
+  box-sizing: border-box;
+  justify-content: center;
+}
+
+@media (max-width: 900px) {
+  #listaPedidos {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  #listaPedidos {
+    grid-template-columns: 1fr;
+  }
+}
+
+#pagination {
+  margin-top: 20px;
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.pagination-button {
+  width: 40px;
+  height: 32px;
+  border: 1px solid #232321;
+  border-radius: 8px;
+  background-color: white;
+  color: #232321;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.pagination-button:hover {
+  background-color: #f0f0f0;
+}
+
+.pagination-button.active {
+  background-color: #232321;
+  color: white;
+  font-weight: 600;
+}
+
+.pagination-button:first-child {
+  margin-left: 40px;
+}
