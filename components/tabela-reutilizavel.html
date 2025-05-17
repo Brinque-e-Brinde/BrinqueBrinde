@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Componente de Tabela - Brinque e Brinde</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="../css/components/tabela-reutilizavel.css" />
+</head>
+<body>
+  <div class="table-container">
+    <div class="table-header">
+      <h1 class="table-title" id="table-title">Produtos</h1>
+      <button class="new-button" id="new-button">Novo</button>
+    </div>
+
+    <div class="search-bar">
+      <input type="text" class="search-input" id="search-input" placeholder="Buscar produtos..." />
+      <button class="search-button">
+        <i class="fas fa-search"></i>
+      </button>
+    </div>
+
+    <div id="table-content">
+      <!-- Conteúdo da tabela será preenchido pelo JavaScript -->
+    </div>
+
+    <div class="pagination" id="pagination">
+      <button class="active">1</button>
+      <button>2</button>
+      <button>3</button>
+      <button>4</button>
+      <button>...</button>
+      <button>10</button>
+      <button class="next-button">NEXT &gt;</button>
+    </div>
+  </div>
+
+  <!-- Modal para adicionar/editar produto -->
+  <div class="modal-overlay" id="product-modal">
+    <div class="modal-container">
+      <div class="modal-header">
+        <h2 class="modal-title" id="modal-title">Adicionar Produto</h2>
+        <button class="modal-close" id="modal-close">&times;</button>
+      </div>
+      <div class="modal-body">
+        <form id="product-form">
+          <input type="hidden" id="product-id" value="" />
+
+          <div class="form-group">
+            <label for="product-name" class="form-label">Nome do Produto</label>
+            <input type="text" id="product-name" class="form-control" required />
+          </div>
+
+          <div class="form-group">
+            <label for="product-code" class="form-label">Código</label>
+            <input type="text" id="product-code" class="form-control" required />
+          </div>
+
+          <div class="form-group">
+            <label for="product-category" class="form-label">Categoria/Tema</label>
+            <select id="product-category" class="form-control" required>
+              <option value="">Selecione uma categoria</option>
+              <option value="Festa">Festa</option>
+              <option value="Decoração">Decoração</option>
+              <option value="Mesa">Mesa</option>
+              <option value="Lembrancinhas">Lembrancinhas</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="product-price" class="form-label">Preço (R$)</label>
+            <input type="number" id="product-price" class="form-control" min="0.01" step="0.01" required />
+          </div>
+
+          <div class="form-group">
+            <label for="product-description" class="form-label">Descrição Detalhada</label>
+            <textarea id="product-description" class="form-control" required></textarea>
+          </div>
+
+          <div class="form-group">
+            <label for="product-stock" class="form-label">Quantidade em Estoque</label>
+            <input type="number" id="product-stock" class="form-control" min="0" step="1" required />
+          </div>
+
+          <div class="form-group">
+            <label class="form-label">Status do Produto</label>
+            <div>
+              <input type="radio" id="status-active" name="product-status" value="active" checked />
+              <label for="status-active">Ativo</label>
+              <input type="radio" id="status-inactive" name="product-status" value="inactive" style="margin-left: 20px;" />
+              <label for="status-inactive">Inativo</label>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="product-image" class="form-label">Imagem do Produto</label>
+            <div class="image-preview" id="image-preview">
+              <span class="image-preview-placeholder">Nenhuma imagem selecionada</span>
+            </div>
+            <label for="image-upload" class="image-upload-btn">Selecionar Imagem</label>
+            <input type="file" id="image-upload" accept="image/*" style="display: none;" />
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button class="btn btn-secondary" id="cancel-button">Cancelar</button>
+        <button class="btn btn-primary" id="save-button">Salvar</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="notification" id="notification">
+    <i class="fas fa-check-circle"></i>
+    <span id="notification-text">Produto salvo com sucesso!</span>
+  </div>
+</body>
+</html>
