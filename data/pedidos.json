@@ -1,0 +1,110 @@
+[
+  {
+    "image": "https://placehold.co/360x240?text=Kit+Unicornio",
+    "title": "Kit Festa Unicórnio",
+    "category": "Decoração Temática",
+    "price": "R$ 149,90",
+    "description": "Kit com toalha, balões, painéis e centros de mesa com tema Unicórnio.",
+    "sales": "95",
+    "stock": "5"
+  },
+  {
+    "image": "https://placehold.co/360x240?text=Principe+Azul",
+    "title": "Kit Príncipe Azul",
+    "category": "Decoração Temática",
+    "price": "R$ 149,90",
+    "description": "Cortina azul royal, painéis dourados e bandejas decorativas com tema de realeza.",
+    "sales": "60",
+    "stock": "3"
+  },
+  {
+    "image": "https://placehold.co/360x240?text=Mesinha+Infantil",
+    "title": "Mesinha Infantil com Cadeiras",
+    "category": "Mobiliário",
+    "price": "R$ 49,90",
+    "description": "Conjunto de mesa + 4 cadeiras para atividades infantis durante a festa.",
+    "sales": "120",
+    "stock": "12"
+  },
+  {
+    "image": "https://placehold.co/360x240?text=Painel+Safari",
+    "title": "Painel Safari Baby",
+    "category": "Decoração Temática",
+    "price": "R$ 129,90",
+    "description": "Painel decorativo com tema de animais da selva para festas infantis.",
+    "sales": "80",
+    "stock": "4"
+  },
+  {
+    "image": "https://placehold.co/360x240?text=Castelo+Inflavel",
+    "title": "Castelo Inflável Pequeno",
+    "category": "Brinquedos",
+    "price": "R$ 199,90",
+    "description": "Mini pula-pula inflável com capacidade para até 4 crianças.",
+    "sales": "45",
+    "stock": "2"
+  },
+  {
+    "image": "https://placehold.co/360x240?text=Totem+Instagram",
+    "title": "Totem Instagram Personalizado",
+    "category": "Acessórios Interativos",
+    "price": "R$ 39,90",
+    "description": "Totem com moldura de rede social para fotos divertidas.",
+    "sales": "150",
+    "stock": "10"
+  },
+  {
+    "image": "https://placehold.co/360x240?text=Kit+Arco-iris",
+    "title": "Kit Festa Arco-Íris",
+    "category": "Decoração Temática",
+    "price": "R$ 139,90",
+    "description": "Painel colorido com flores de papel, bandejas e caixas decorativas.",
+    "sales": "110",
+    "stock": "6"
+  },
+  {
+    "image": "https://placehold.co/360x240?text=Patrulha+Canina",
+    "title": "Display de Personagem - Patrulha Canina",
+    "category": "Acessórios",
+    "price": "R$ 29,90",
+    "description": "Display em MDF com personagens da Patrulha Canina para a mesa decorada.",
+    "sales": "85",
+    "stock": "8"
+  },
+  {
+    "image": "https://placehold.co/360x240?text=Tapete+Infantil",
+    "title": "Tapete de Atividades Infantil",
+    "category": "Área Kids",
+    "price": "R$ 59,90",
+    "description": "Tapete em EVA com peças coloridas para área infantil durante a festa.",
+    "sales": "105",
+    "stock": "7"
+  },
+  {
+    "image": "https://placehold.co/360x240?text=Lousa+Boas-vindas",
+    "title": "Cavalete de Lousa Personalizado",
+    "category": "Acessórios Decorativos",
+    "price": "R$ 44,90",
+    "description": "Lousa decorativa com nome da criança e frase de boas-vindas.",
+    "sales": "73",
+    "stock": "9"
+  },
+  {
+    "image": "https://placehold.co/360x240?text=Minnie+Vermelha",
+    "title": "Kit Festa Minnie Vermelha",
+    "category": "Decoração Temática",
+    "price": "R$ 149,90",
+    "description": "Painel com tema da Minnie em vermelho e preto, com toalhas e bandejas.",
+    "sales": "88",
+    "stock": "4"
+  },
+  {
+    "image": "https://placehold.co/360x240?text=Kit+Piquenique",
+    "title": "Kit Piquenique Infantil",
+    "category": "Área Kids",
+    "price": "R$ 99,90",
+    "description": "Cesta, toalha xadrez e decoração temática para festas ao ar livre.",
+    "sales": "92",
+    "stock": "6"
+  }
+]

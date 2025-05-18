@@ -16,6 +16,95 @@ async function loadContent(section) {
     const html = await response.text();
     content.innerHTML = html;
 
+    if (section === 'produtos') {
+      fetch('../../data/pedidos.json')
+        .then(res => res.json())
+        .then(produtos => {
+                  const lista = document.getElementById('listaPedidos');
+          const pagination = document.getElementById('pagination');
+          const btnCadastrar = document.querySelector('.btn-submit');
+
+          let currentPage = 1;
+          const itemsPerPage = 6;
+          const totalPages = Math.ceil(produtos.length / itemsPerPage);
+
+          function renderPage(page) {
+            lista.innerHTML = '';
+            pagination.innerHTML = '';
+            currentPage = page;
+
+            const start = (page - 1) * itemsPerPage;
+            const end = start + itemsPerPage;
+            const currentItems = produtos.slice(start, end);
+
+            currentItems.forEach(produto => {
+              const card = document.createElement('product-card');
+              Object.entries(produto).forEach(([key, value]) => {
+                card.setAttribute(key, value);
+              });
+              lista.appendChild(card);
+            });
+
+            for (let i = 1; i <= totalPages; i++) {
+              const btn = document.createElement('button');
+              btn.textContent = i;
+              btn.className = 'pagination-button';
+              if (i === currentPage) btn.classList.add('active');
+              btn.addEventListener('click', () => renderPage(i));
+              pagination.appendChild(btn);
+            }
+          }
+
+          renderPage(currentPage);
+
+          // Mostrar formulário e esconder lista ao clicar em Novo
+          const btnNovo = document.getElementById('btnNovoProduto');
+          const btnCancelar = document.querySelector('.btn-cancel');
+          const form = document.getElementById('formNovoProduto');
+
+          if (btnNovo && btnCancelar && lista && pagination && form) {
+            btnNovo.addEventListener('click', () => {
+              lista.style.display = 'none';
+              pagination.style.display = 'none';
+              form.style.display = 'block';
+            });
+
+            btnCancelar.addEventListener('click', () => {
+              form.style.display = 'none';
+              lista.style.display = 'grid';
+              pagination.style.display = 'flex';
+            });
+          }
+
+          if (btnCadastrar && form) {
+          btnCadastrar.addEventListener('click', (e) => {
+            e.preventDefault(); // evita recarregar a página
+
+            // Oculta o formulário e exibe a lista novamente
+            form.style.display = 'none';
+            lista.style.display = 'grid';
+            pagination.style.display = 'flex';
+
+            // Opcional: limpar o formulário
+            form.querySelector('form').reset();
+
+            // Opcional: adicionar item mock na lista
+            // const novoProduto = {
+            //   image: 'img/novo-produto.jpg',
+            //   title: 'Novo Kit Festa',
+            //   category: 'Exemplo',
+            //   price: 'R$ 100,00',
+            //   description: 'Descrição do novo item',
+            //   sales: '0',
+            //   stock: '1'
+            // };
+            // produtos.unshift(novoProduto);
+            // renderPage(1);
+          });
+        }
+        });
+    }
+
     initAddProduct();
 
   } catch (error) {
@@ -50,4 +139,3 @@ function setupNovoProduto() {
     });
   }
 }
-
